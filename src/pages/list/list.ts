@@ -38,7 +38,7 @@ export class ListPage {
 
   ionViewCanEnter(): boolean {
     console.log('Can I enter?')
-    return false;
+    return true;
   }
 
 

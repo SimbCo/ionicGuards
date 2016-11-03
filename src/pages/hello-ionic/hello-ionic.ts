@@ -25,11 +25,20 @@ export class HelloIonicPage {
   }
 
   canNotEnter(){
+    this.canLeave = true
     this.navCtrl.setRoot(ListPage)
+    .catch(()=> console.log('I can canNot enter?'))
   }
 
   ionViewCanLeave(): boolean{
     return this.canLeave;
+   }
+
+   ionViewCanEnter(): boolean {
+     console.log('Can I enter LISTING?')
+     this.navCtrl.push(ListPage)
+     .catch(()=> console.log('XXXX?'))
+     return false;
    }
 
 
