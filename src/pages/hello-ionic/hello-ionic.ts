@@ -24,8 +24,13 @@ export class HelloIonicPage {
      .catch(()=> console.log('I can not leave?'))
   }
 
+  canNotEnter(){
+    this.navCtrl.setRoot(ListPage)
+  }
+
   ionViewCanLeave(): boolean{
     return this.canLeave;
    }
+
 
 }

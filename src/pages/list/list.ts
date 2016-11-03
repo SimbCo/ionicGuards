@@ -35,4 +35,12 @@ export class ListPage {
       item: item
     });
   }
+
+  ionViewCanEnter(): boolean {
+    console.log('Can I enter?')
+    return false;
+  }
+
+
+
 }
